@@ -1,0 +1,6 @@
+local visualUser = game:GetService("VirtualUser")
+local lp = game.Players.LocalPlayer or game:GetService('Players').LocalPlayer
+lp.Idled:connect(function()
+	visualUser:CaptureController()
+	visualUser:ClickButton2(Vector2.new())
+end)
