@@ -1,9 +1,15 @@
 local module = {}
-function bypass()
+function module:bypass()
     local visualUser = game:GetService("VirtualUser")
     local lp = game.Players.LocalPlayer or game:GetService('Players').LocalPlayer
     lp.Idled:connect(function()
         visualUser:CaptureController()
         visualUser:ClickButton2(Vector2.new())
     end)
+    print("Loaded")
 end
+return module
+--[[
+local AntiAFK = loadstring(game:HttpGet("https://raw.githubusercontent.com/x203f/RBXEasyCMD/main/main/CMD5",true))()
+AntiAFK:bypass()
+--]]
