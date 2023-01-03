@@ -10,6 +10,6 @@ function module:bypass()
 end
 return module
 --[[
-local AntiAFK = loadstring(game:HttpGet("https://raw.githubusercontent.com/x203f/RBXEasyCMD/main/main/CMD5",true))()
+local AntiAFK = loadstring(game:HttpGet("https://raw.githubusercontent.com/x203f/RBXAntiAFK/main/main/AntiAFK",true))()
 AntiAFK:bypass()
 --]]
